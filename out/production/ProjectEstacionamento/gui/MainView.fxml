@@ -9,8 +9,8 @@
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="227.0" prefWidth="389.0">
          <children>
             <Button fx:id="buttonEditar" layoutX="26.0" layoutY="17.0" mnemonicParsing="false" onAction="#onButtonEditarAction" prefHeight="30.0" prefWidth="95.0" text="Editar" />
-            <Button fx:id="buttonEntrada" layoutX="155.0" layoutY="17.0" mnemonicParsing="false" onAction="#onButtonEditarAction" prefHeight="30.0" prefWidth="95.0" text="Entrada" />
-            <Button fx:id="buttonSaida" layoutX="280.0" layoutY="14.0" mnemonicParsing="false" onAction="#onButtonSaidaAction" prefHeight="30.0" prefWidth="95.0" text="S" />
+            <Button fx:id="buttonEntrada" layoutX="155.0" layoutY="17.0" mnemonicParsing="false" onAction="#onButtonEntradaAction" prefHeight="30.0" prefWidth="95.0" text="Entrada" />
+            <Button fx:id="buttonSaida" layoutX="280.0" layoutY="17.0" mnemonicParsing="false" onAction="#onButtonSaidaAction" prefHeight="30.0" prefWidth="95.0" text="Saída" />
          </children></AnchorPane>
   </content>
 </ScrollPane>
