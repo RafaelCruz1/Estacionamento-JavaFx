@@ -9,8 +9,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="346.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
    <children>
-      <PasswordField fx:id="passPassword" layoutX="52.0" layoutY="184.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" />
       <TextField fx:id="txUser" layoutX="52.0" layoutY="105.0" prefHeight="25.0" prefWidth="230.0" promptText="User" />
+      <PasswordField fx:id="passPassword" layoutX="52.0" layoutY="184.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" />
       <Button fx:id="buttonEntrar" layoutX="222.0" layoutY="250.0" mnemonicParsing="false" onAction="#onButtonEntrarAction" text="Entrar">
          <font>
             <Font size="15.0" />

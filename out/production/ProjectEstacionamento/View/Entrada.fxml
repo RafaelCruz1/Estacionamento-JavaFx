@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="328.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Entrada">
+   <children>
+      <Button fx:id="ButtonSalvar" layoutX="195.0" layoutY="235.0" mnemonicParsing="false" onAction="#onButtonSalvarAction" text="Salvar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="27.0" layoutY="71.0" prefHeight="21.0" prefWidth="142.0" text="Modelo do veículo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="27.0" layoutY="92.0" prefHeight="25.0" prefWidth="228.0" promptText="Digite o modelo do veiculo..." />
+      <Label layoutX="27.0" layoutY="154.0" prefHeight="21.0" prefWidth="142.0" text="Placa do veículo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txPlaca" layoutX="27.0" layoutY="175.0" prefHeight="25.0" prefWidth="228.0" promptText="Digite a placa do veiculo..." />
+      <Button fx:id="buttonCancelar" layoutX="105.0" layoutY="235.0" mnemonicParsing="false" onAction="#onButtonCancelarAction" text="Cancelar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
