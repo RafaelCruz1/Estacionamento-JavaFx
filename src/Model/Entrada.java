@@ -1,6 +1,32 @@
 package Model;
 
-public class Entrada {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Entrada extends Application {
+    private static Stage stage;
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/View/EntradaVeiculo.fxml"));
+        Scene scene = new Scene(root);
+        stage.setTitle("Entrada");
+        stage.setScene(scene);
+        stage.show();
+        setStage(stage);
+    }
+
+    public static Stage getStage() {
+        return stage;
+    }
+
+    public static void setStage(Stage stage) {
+        Entrada.stage = stage;
+    }
+
     private String model;
     private String plate;
 
@@ -20,11 +46,12 @@ public class Entrada {
         this.model = model;
     }
 
-    public String getPlate() {
+    public String getPlate(String placa) {
         return plate;
     }
 
     public void setPlate(String plate) {
         this.plate = plate;
     }
+
 }

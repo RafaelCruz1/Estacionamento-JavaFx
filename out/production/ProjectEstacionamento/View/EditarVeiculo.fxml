@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditarVeiculoController">
+<AnchorPane prefHeight="331.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditarVeiculoController">
    <children>
-      <Button fx:id="buttonVoltar" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#onButtonVoltarAction" text="Voltar" />
+      <Label layoutX="41.0" layoutY="89.0" text="Alterar placa">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txAlterarPlaca" layoutX="44.0" layoutY="119.0" onAction="#onTxAlterarPlacaAction" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="43.0" layoutY="179.0" text="Alterar modelo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txAlterarModelo" layoutX="44.0" layoutY="210.0" onAction="#onTxAlterarModeloAction" prefHeight="25.0" prefWidth="194.0" />
+      <Button fx:id="buttonSalvar" layoutX="196.0" layoutY="266.0" mnemonicParsing="false" onAction="#onButtonSalvarAction" text="Salvar" />
+      <Button fx:id="buttonCancelar" layoutX="109.0" layoutY="266.0" mnemonicParsing="false" onAction="#onButtonCancelarAction" prefHeight="25.0" prefWidth="64.0" text="Cancelar" />
+      <Label layoutX="14.0" layoutY="14.0" text="Editar Veiculo">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
    <children>
-      <TableView fx:id="tbvTabela" layoutX="28.0" layoutY="111.0" prefHeight="227.0" prefWidth="474.0">
-        <columns>
-          <TableColumn prefWidth="45.0" text="ID" />
-          <TableColumn prefWidth="102.0" text="Placa" />
-            <TableColumn prefWidth="175.0" text="Modelo" />
-            <TableColumn prefWidth="154.0" text="Horário de entrada" />
-        </columns>
-      </TableView>
-      <Button fx:id="buttonSaida" layoutX="348.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonSaidaAction" prefHeight="68.0" prefWidth="122.0" text="Saida" />
-      <Button fx:id="buttonEntrada" layoutX="54.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonEntradaAction" prefHeight="68.0" prefWidth="104.0" text="Entrada" />
-      <Button fx:id="buttonEditar" layoutX="201.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonEditarAction" prefHeight="68.0" prefWidth="104.0" text="Editar" />
-      <Button fx:id="buttonSair" layoutX="466.0" layoutY="341.0" mnemonicParsing="false" onAction="#onButtonSairAction" text="Sair" />
+      <ComboBox fx:id="cboxVeiculosEstacionados" layoutX="51.0" layoutY="130.0" prefHeight="25.0" prefWidth="350.0" promptText="Veiculos Estacionados" />
+      <Button fx:id="buttonSaida" layoutX="313.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonSaidaAction" prefHeight="68.0" prefWidth="122.0" text="Saida" />
+      <Button fx:id="buttonEntrada" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonEntradaAction" prefHeight="68.0" prefWidth="104.0" text="Entrada" />
+      <Button fx:id="buttonEditar" layoutX="174.0" layoutY="29.0" mnemonicParsing="false" onAction="#onButtonEditarAction" prefHeight="68.0" prefWidth="104.0" text="Editar" />
    </children>
 </AnchorPane>

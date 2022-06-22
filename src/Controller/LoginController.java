@@ -9,7 +9,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -32,7 +31,7 @@ public class LoginController implements Initializable {
     @FXML
     public void onButtonEntrarAction() {
 
-        if (txUser.getText().equals("Root") && passPassword.getText().equals("123456")) {
+        if (txUser.getText().equals("") && passPassword.getText().equals("123456")) {
             Principal p = new Principal();
             fecha();
             try {
